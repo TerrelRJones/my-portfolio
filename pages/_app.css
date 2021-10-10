@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@700;900&family=Stick+No+Bills:wght@800&display=swap");
+
+:root {
+  --main: black;
+  --light-blue: #85bed9;
+  --light-brown: #f0e8d5;
+  --brown: #45392a;
+  --dark-brown: #2b2a2a;
+  --orange: #fa7004;
+  --green: #245a38;
+}
+
+body {
+  background-color: var(--light-brown);
+  font-family: "Roboto", sans-serif;
+}
