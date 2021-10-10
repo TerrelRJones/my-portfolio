@@ -6,7 +6,6 @@ import Link from "next/link";
 import eCommerce from "../public/img/e-commerce.png";
 import google from "../public/img/google-clone.png";
 import easyBank from "../public/img/easy-bank.png";
-import { route } from "next/dist/server/router";
 
 const Projects = () => {
   const eCode = "https://github.com/TerrelRJones/e-commerce";
@@ -52,6 +51,8 @@ const Projects = () => {
     flex-wrap: wrap;
     width: 100%;
     /* background-color: var(--green); */
+    @media only screen and (max-width: 1024px) {
+      justify-content: center;
   `;
 
   const ProjectBlockContainer = styled.div`
@@ -94,7 +95,7 @@ const Projects = () => {
   `;
 
   return (
-    <div>
+    <>
       <Heading>Projects</Heading>
       <ProjectContainer>
         {projects.map((item) => (
@@ -118,7 +119,7 @@ const Projects = () => {
           </ProjectBlockContainer>
         ))}
       </ProjectContainer>
-    </div>
+    </>
   );
 };
 

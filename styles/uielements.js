@@ -50,7 +50,7 @@ export const ParagraphText = styled.div`
   @media only screen and (max-width: 1024px) {
     font-size: 1rem;
     font-weight: 600;
-    line-height: 22px;
+    line-height: 24px;
     text-align: center;
   }
 `;
