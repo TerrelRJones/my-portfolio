@@ -21,7 +21,10 @@ const SkillsRow = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 4rem;
-  color: var(--orange);
+  color: var(--light-brown);
+  background-color: var(--brown);
+  padding: 1.4rem;
+  border-radius: 10px;
 
   @media only screen and (max-width: 1024px) {
     font-size: 2rem;
