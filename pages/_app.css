@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@700;900&family=Stick+No+Bills:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 
 :root {
   --main: black;
@@ -9,9 +10,14 @@
   --dark-brown: #2b2a2a;
   --orange: #fa7004;
   --green: #245a38;
+  --yellow: #f2cb14;
 }
 
 body {
-  background-color: var(--light-brown);
+  background-color: whitesmoke;
   font-family: "Roboto", sans-serif;
+}
+
+.bg {
+  background-color: var(--main);
 }

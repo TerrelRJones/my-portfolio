@@ -14,17 +14,22 @@ import {
 
 const SkillsContainer = styled.div`
   width: 100%;
-  margin-bottom: 5rem;
+  margin-bottom: 200px;
+
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 50px;
+  }
 `;
 
 const SkillsRow = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 4rem;
-  color: var(--light-brown);
-  background-color: var(--brown);
+  color: var(--main);
+  border: 8px solid var(--main);
+  background-color: var(--yellow);
   padding: 1.4rem;
-  border-radius: 10px;
+  border-radius: 2px;
 
   @media only screen and (max-width: 1024px) {
     font-size: 2rem;

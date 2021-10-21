@@ -50,9 +50,13 @@ const Projects = () => {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 200px;
+
     /* background-color: var(--green); */
     @media only screen and (max-width: 1024px) {
       justify-content: center;
+      margin-bottom: 50px;
+    }
   `;
 
   const ProjectBlockContainer = styled.div`
@@ -66,6 +70,9 @@ const Projects = () => {
   const ProjectImageContainer = styled.div`
     width: 100%;
     cursor: pointer;
+    padding: 10px;
+    background-color: var(--yellow);
+    border: 8px solid var(--main);
   `;
 
   const ButtonContainer = styled.div`
@@ -75,8 +82,8 @@ const Projects = () => {
   `;
 
   const StyledButton = styled.button`
-    background-color: var(--brown);
-    color: var(--orange);
+    background-color: var(--main);
+    color: white;
     font-family: "Anton", sans-serif;
     letter-spacing: 0.1rem;
     /* padding: 10px 15px; */
@@ -84,13 +91,33 @@ const Projects = () => {
     height: 40px;
     border: none;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 
     :hover {
-      background-color: var(--orange);
-      color: var(--brown);
+      background-color: var(--yellow);
+      transform: translate3d(-4px, -4px, 5px);
+    }
+  `;
+
+  const StyledButtonTwo = styled.button`
+    background-color: var(--white);
+    color: var(--main);
+    border: 4px solid var(--main);
+    font-family: "Archivo Black", sans-serif;
+    letter-spacing: 0.1rem;
+    /* padding: 10px 15px; */
+    width: 80px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    :hover {
+      background-color: var(--yellow);
+      transform: translate3d(-4px, -4px, 5px);
     }
   `;
 
@@ -112,7 +139,7 @@ const Projects = () => {
               </Link>
               <Link href={item.code} passHref>
                 <a target="_blank">
-                  <StyledButton>CODE</StyledButton>
+                  <StyledButtonTwo>CODE</StyledButtonTwo>
                 </a>
               </Link>
             </ButtonContainer>

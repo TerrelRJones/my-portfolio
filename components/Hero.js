@@ -8,7 +8,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-import profilePic from "../public/img/demoProfilePic.png";
+import profilePic from "../public/img/fsr_logo.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -24,7 +24,7 @@ const HeroContainer = styled.main`
   width: 100%;
   height: 100vh;
   /* padding-top: 5rem; */
-  /* display: flex; */
+
   align-items: center;
   justify-content: center;
   margin-bottom: 5rem;
@@ -33,7 +33,7 @@ const HeroContainer = styled.main`
 const LeftSide = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   flex: 1;
 `;
 
@@ -43,7 +43,11 @@ const RightSide = styled.div`
   /* background-color: black; */
 
   @media only screen and (max-width: 1024px) {
-    flex: 1;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: 0.5;
+    /* background-color: var(--yellow); */
   }
 `;
 
@@ -54,14 +58,24 @@ const BottomContainer = styled.div`
   align-items: center;
   bottom: 0;
   max-width: 1440px;
-  /* background-color: yellow; */
   /* height: 50px; */
   width: 100%;
   /* padding: 0 1rem; */
 
   h2 {
-    font-size: 1rem;
-    color: var(--orange);
+    font-size: 1.8rem;
+    color: var(--main);
+    font-family: "Archivo Black", sans-serif;
+  }
+  @media only screen and (max-width: 1024px) {
+    margin-top: 20px;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+    /* height: 200px; */
   }
 `;
 
@@ -89,7 +103,7 @@ const Hero = () => {
           </ParagraphText>
         </LeftSide>
         <RightSide>
-          <Image src={profilePic} alt="Picture of the author" />
+          <Image src={profilePic} alt="Picture of the Front End Engineer" />
         </RightSide>
       </Container>
       <BottomContainer>
@@ -116,7 +130,7 @@ const Hero = () => {
           </Link>
         </LeftIconLinks>
         <div>
-          <h2>TerrelRJones@gmail.com</h2>
+          <h2>info@fullstackrell.com</h2>
         </div>
       </BottomContainer>
     </HeroContainer>

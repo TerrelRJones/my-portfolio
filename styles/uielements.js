@@ -5,64 +5,67 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* margin: 0 auto; */
-  height: 100%; // check from time to time
+  /* margin-top: 0; */
+  height: 80%; // check from time to time
 
   @media only screen and (max-width: 1024px) {
     flex-direction: column-reverse;
     margin-top: 4rem;
+    height: 80%;
   }
 `;
 export const Heading = styled.h1`
   font-size: 3rem;
   letter-spacing: 0.05rem;
-  font-family: "Anton", sans-serif;
+  font-family: "Archivo Black", sans-serif;
   text-transform: uppercase;
-  color: var(--brown);
+  color: var(--main);
 
   @media only screen and (max-width: 1024px) {
     font-size: 2rem;
     text-align: center;
-    line-height: 50px;
+    line-height: 2rem;
   }
 `;
 export const SubHeading = styled.h2`
   font-size: 1.5rem;
-  letter-spacing: 0.2rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Archivo Black", sans-serif;
   font-weight: 800;
-  /* text-transform: uppercase; */
-  color: var(--brown);
+  text-transform: uppercase;
+  color: var(--main);
 
   @media only screen and (max-width: 1024px) {
     font-size: 1rem;
-    text-align: center;
-    line-height: 50px;
+    /* text-align: center; */
+    line-height: 1.2rem;
   }
 `;
 
+// Paragraph Text
 export const ParagraphText = styled.div`
   font-size: 1.3rem;
-  font-family: "Roboto", sans-serif;
-  max-width: 500px;
-  color: var(--brown);
+  letter-spacing: 0.1rem;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 700;
+  max-width: 800px;
+  color: var(--main);
 
   @media only screen and (max-width: 1024px) {
     font-size: 1rem;
     font-weight: 600;
-    line-height: 24px;
-    text-align: center;
+    line-height: 1.2rem;
+    /* text-align: center; */
   }
 `;
 
 export const StyledLink = styled.a`
-  color: var(--brown);
+  color: var(--main);
   font-size: 2rem;
   transition: 0.2s ease-in-out;
 
   :hover {
     transform: translateY(-2px);
-    color: var(--orange);
+    color: var(--yellow);
   }
 
   @media only screen and (max-width: 1024px) {

@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
 const FooterStyled = styled.footer`
-  background-color: var(--brown);
-  color: var(--orange);
+  background-color: var(--main);
+  color: white;
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 5px;
+  height: 50px;
+
+  h1 {
+    font-size: 1rem;
+  }
 `;
 
 const Footer = () => {
