@@ -8,7 +8,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-import profilePic from "/public/img/fsr_logo.svg";
+import profilePic from "../public/img/FSR_logo.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
