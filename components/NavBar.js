@@ -69,7 +69,7 @@ const NavBar = () => {
           </Link>
         </div>
         <StyledNavLink>
-          <Link href="/work" passHref>
+          <Link href="#work" passHref>
             <StyledLink>Work</StyledLink>
           </Link>
           <Link href="/about" passHref>
