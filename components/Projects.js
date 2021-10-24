@@ -123,7 +123,7 @@ const Projects = () => {
 
   return (
     <>
-      <Heading>Projects</Heading>
+      <Heading id="work">Projects</Heading>
       <ProjectContainer>
         {projects.map((item) => (
           <ProjectBlockContainer key={item.key}>

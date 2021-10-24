@@ -69,15 +69,15 @@ const NavBar = () => {
           </Link>
         </div>
         <StyledNavLink>
-          <Link href="/work" passHref>
+          <Link href="#work" passHref>
             <StyledLink>Work</StyledLink>
           </Link>
-          <Link href="/about" passHref>
+          {/* <Link href="/about" passHref>
             <StyledLink>About</StyledLink>
           </Link>
           <Link href="/contact" passHref>
             <StyledLink>Contact</StyledLink>
-          </Link>
+          </Link> */}
         </StyledNavLink>
         <StyledHamburger>
           <FaIcon.FaBars />
