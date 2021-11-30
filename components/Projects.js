@@ -122,11 +122,11 @@ const Projects = () => {
         {projects.map((item, index) => (
           <ProjectBlockContainer key={index}>
             <SubHeading>{item.name}</SubHeading>
-            <Link href={item.route} passHref>
-              <ProjectImageContainer>
-                <Image src={item.img} alt="Picture of work" />
-              </ProjectImageContainer>
-            </Link>
+            {/* <Link href={item.route} passHref> */}
+            <ProjectImageContainer>
+              <Image src={item.img} alt="Picture of work" />
+            </ProjectImageContainer>
+            {/* </Link> */}
             <ButtonContainer>
               <Link href={item.live} passHref>
                 <a target="_blank">

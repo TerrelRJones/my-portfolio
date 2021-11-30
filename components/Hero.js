@@ -8,7 +8,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-import profilePic from "../public/img/fsr_logo.svg";
+import profilePic from "../public/img/Terrel_headshot.jpeg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,7 +16,6 @@ import {
   faInstagram,
   faLinkedin,
   faGithub,
-  faGit,
 } from "@fortawesome/free-brands-svg-icons";
 
 const HeroContainer = styled.main`
@@ -38,7 +37,7 @@ const LeftSide = styled.div`
 `;
 
 const RightSide = styled.div`
-  flex: 1;
+  flex: 0.5;
 
   /* background-color: black; */
 
@@ -91,46 +90,57 @@ const Hero = () => {
     <HeroContainer>
       <Container>
         <LeftSide>
-          <Heading>Front End Engineer</Heading>
+          <Heading>Terrel R Jones</Heading>
           <ParagraphText>
-            Experienced bootcamp graduate with a background in various coding
-            languages developing web apps. Specializing in JavaScript full
-            stack. Professional strengths include creative thinking and problem
-            solving, verbal and written communication, and time management. A
-            very detail oriented mindset from 5+ years in the automotive
-            transportation industry. I&#39;m ready to learn and contribute to
-            team success.
+            Full Stack JavaScript Engineer with a focus on front end technology
+            React. I have a strong interest in System Design, and Serverless
+            technologies such as AWS, and Google Cloud. Professional strengths
+            include creative thinking, and problem solving, clear verbal and
+            written communication, and time management.I&#39;m ready to learn
+            and contribute to team success.
           </ParagraphText>
         </LeftSide>
         <RightSide>
-          <Image src={profilePic} alt="Picture of the Front End Engineer" />
+          <Image
+            src={profilePic}
+            alt="Picture of the Front End Engineer"
+            layout="intrinsic"
+          />
         </RightSide>
       </Container>
       <BottomContainer>
         <LeftIconLinks>
           <Link href="https://instagram.com" passHref>
-            <StyledLink>
-              <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-            </StyledLink>
+            <a target="_blank">
+              <StyledLink>
+                <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+              </StyledLink>
+            </a>
           </Link>
-          <Link href="https://linkedin.com" passHref>
-            <StyledLink>
-              <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
-            </StyledLink>
+          <Link href="https://linkedin.com/in/terrelrjones" passHref>
+            <a target="_blank">
+              <StyledLink>
+                <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+              </StyledLink>
+            </a>
           </Link>
           <Link href="https://twitter.com/fullstackrell" passHref>
-            <StyledLink>
-              <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-            </StyledLink>
+            <a target="_blank">
+              <StyledLink>
+                <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+              </StyledLink>
+            </a>
           </Link>
           <Link href="https://github.com/TerrelRJones" passHref>
-            <StyledLink>
-              <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-            </StyledLink>
+            <a target="_blank">
+              <StyledLink>
+                <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+              </StyledLink>
+            </a>
           </Link>
         </LeftIconLinks>
         <div>
-          <h2>info@fullstackrell.com</h2>
+          <h2>Full Stack JavaScript Engineer</h2>
         </div>
       </BottomContainer>
     </HeroContainer>

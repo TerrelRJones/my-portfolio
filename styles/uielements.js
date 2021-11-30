@@ -44,6 +44,7 @@ export const SubHeading = styled.h2`
 // Paragraph Text
 export const ParagraphText = styled.div`
   font-size: 1.3rem;
+  line-height: 2rem;
   /* letter-spacing: 0.1rem; */
   font-family: "Archivo Black", sans-serif;
   font-weight: 700;
