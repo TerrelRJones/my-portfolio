@@ -10,7 +10,6 @@ import easyBank from "../public/img/easy-bank.png";
 const Projects = () => {
   const eCode = "https://github.com/TerrelRJones/e-commerce";
   const eLive = "https://terrelrjones.github.io/e-commerce/";
-  const routeEcommerce = "/prime";
   const gCode = "https://github.com/TerrelRJones/google-home-page-clone";
   const gLive = "https://terrelrjones.github.io/google-home-page-clone/";
   const eBankCode = "https://github.com/TerrelRJones/easy-bank";
@@ -18,32 +17,27 @@ const Projects = () => {
 
   const projects = [
     {
-      key: 1,
       name: "Prime",
       img: eCommerce,
       live: eLive,
       code: eCode,
-      route: routeEcommerce,
+      route: "/prime",
     },
     {
-      key: 2,
       name: "Google Homepage",
       img: google,
       live: gLive,
       code: gCode,
+      route: "/googleHomepageClone",
     },
     {
-      key: 3,
       name: "Easy Bank",
       img: easyBank,
       live: eBankLive,
       code: eBankCode,
+      route: "/easyBank",
     },
   ];
-
-  const clicked = (i) => {
-    console.log(`clicked ${i}`);
-  };
 
   const ProjectContainer = styled.div`
     display: flex;
@@ -125,12 +119,14 @@ const Projects = () => {
     <>
       <Heading id="work">Projects</Heading>
       <ProjectContainer>
-        {projects.map((item) => (
-          <ProjectBlockContainer key={item.key}>
+        {projects.map((item, index) => (
+          <ProjectBlockContainer key={index}>
             <SubHeading>{item.name}</SubHeading>
-            <ProjectImageContainer onClick={() => clicked(item.route)}>
-              <Image src={item.img} alt="Picture of the author" />
+            {/* <Link href={item.route} passHref> */}
+            <ProjectImageContainer>
+              <Image src={item.img} alt="Picture of work" />
             </ProjectImageContainer>
+            {/* </Link> */}
             <ButtonContainer>
               <Link href={item.live} passHref>
                 <a target="_blank">
