@@ -117,6 +117,7 @@ const Hero = () => {
               </StyledLink>
             </a>
           </Link>
+
           <Link href="https://linkedin.com/in/terrelrjones" passHref>
             <a target="_blank">
               <StyledLink>
@@ -131,6 +132,7 @@ const Hero = () => {
               </StyledLink>
             </a>
           </Link>
+
           <Link href="https://github.com/TerrelRJones" passHref>
             <a target="_blank">
               <StyledLink>
