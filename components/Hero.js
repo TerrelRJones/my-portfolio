@@ -81,7 +81,7 @@ const BottomContainer = styled.div`
 const LeftIconLinks = styled.div`
   display: flex;
   padding: 0 1rem;
-  width: 20rem;
+  width: 15rem;
   justify-content: space-between;
 `;
 
@@ -110,13 +110,13 @@ const Hero = () => {
       </Container>
       <BottomContainer>
         <LeftIconLinks>
-          <Link href="https://instagram.com" passHref>
+          {/* <Link href="https://instagram.com" passHref>
             <a target="_blank">
               <StyledLink>
                 <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
               </StyledLink>
             </a>
-          </Link>
+          </Link> */}
 
           <Link href="https://linkedin.com/in/terrelrjones" passHref>
             <a target="_blank">
