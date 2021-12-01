@@ -96,7 +96,7 @@ const Hero = () => {
             React. I have a strong interest in System Design, and Serverless
             technologies such as AWS, and Google Cloud. Professional strengths
             include creative thinking, and problem solving, clear verbal and
-            written communication, and time management.I&#39;m ready to learn
+            written communication, and time management. I&#39;m ready to learn
             and contribute to team success.
           </ParagraphText>
         </LeftSide>
@@ -110,35 +110,27 @@ const Hero = () => {
       </Container>
       <BottomContainer>
         <LeftIconLinks>
-          {/* <Link href="https://instagram.com" passHref>
-            <a target="_blank">
-              <StyledLink>
-                <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-              </StyledLink>
-            </a>
-          </Link> */}
+          <Link href="https://instagram.com/rellyrellisdope" passHref>
+            <StyledLink target="_blank">
+              <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+            </StyledLink>
+          </Link>
 
           <Link href="https://linkedin.com/in/terrelrjones" passHref>
-            <a target="_blank">
-              <StyledLink>
-                <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
-              </StyledLink>
-            </a>
+            <StyledLink target="_blank">
+              <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+            </StyledLink>
           </Link>
           <Link href="https://twitter.com/fullstackrell" passHref>
-            <a target="_blank">
-              <StyledLink>
-                <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-              </StyledLink>
-            </a>
+            <StyledLink target="_blank">
+              <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+            </StyledLink>
           </Link>
 
           <Link href="https://github.com/TerrelRJones" passHref>
-            <a target="_blank">
-              <StyledLink>
-                <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-              </StyledLink>
-            </a>
+            <StyledLink target="_blank">
+              <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+            </StyledLink>
           </Link>
         </LeftIconLinks>
         <div>{/* <h2>Full Stack JavaScript Engineer</h2> */}</div>
