@@ -110,38 +110,40 @@ const Hero = () => {
       </Container>
       <BottomContainer>
         <LeftIconLinks>
-          <Link href="https://instagram.com" passHref>
-            <a target="_blank">
-              <StyledLink>
+          <Link href="https://instagram.com/rellyrellisdope" passHref>
+            <StyledLink>
+              <a target="_blank">
                 <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-              </StyledLink>
-            </a>
+              </a>
+            </StyledLink>
           </Link>
 
           <Link href="https://linkedin.com/in/terrelrjones" passHref>
-            <a target="_blank">
-              <StyledLink>
+            <StyledLink>
+              <a target="_blank">
                 <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
-              </StyledLink>
-            </a>
+              </a>
+            </StyledLink>
           </Link>
           <Link href="https://twitter.com/fullstackrell" passHref>
-            <a target="_blank">
-              <StyledLink>
+            <StyledLink>
+              <a target="_blank">
                 <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-              </StyledLink>
-            </a>
+              </a>
+            </StyledLink>
           </Link>
 
           <Link href="https://github.com/TerrelRJones" passHref>
-            <a target="_blank">
-              <StyledLink>
+            <StyledLink>
+              <a target="_blank">
                 <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-              </StyledLink>
-            </a>
+              </a>
+            </StyledLink>
           </Link>
         </LeftIconLinks>
-        <div>{/* <h2>Full Stack JavaScript Engineer</h2> */}</div>
+        <div>
+          <h2>Full Stack JavaScript Engineer</h2>
+        </div>
       </BottomContainer>
     </HeroContainer>
   );
