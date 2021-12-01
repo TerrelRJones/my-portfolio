@@ -139,9 +139,7 @@ const Hero = () => {
             </a>
           </Link>
         </LeftIconLinks>
-        <div>
-          <h2>Full Stack JavaScript Engineer</h2>
-        </div>
+        <div>{/* <h2>Full Stack JavaScript Engineer</h2> */}</div>
       </BottomContainer>
     </HeroContainer>
   );
