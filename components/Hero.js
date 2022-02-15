@@ -110,7 +110,7 @@ const Hero = () => {
       </Container>
       <BottomContainer>
         <LeftIconLinks>
-          <Link href="https://instagram.com/rellyrellisdope" passHref>
+          <Link href="https://instagram.com/fullstackrell" passHref>
             <StyledLink target="_blank">
               <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
             </StyledLink>
