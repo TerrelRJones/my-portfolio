@@ -6,6 +6,7 @@ import Link from "next/link";
 import eCommerce from "../public/img/e-commerce.png";
 import google from "../public/img/google-clone.png";
 import easyBank from "../public/img/easy-bank.png";
+import autoShine from "../public/img/autoshine2.png";
 
 const Projects = () => {
   const eCode = "https://github.com/TerrelRJones/e-commerce";
@@ -14,8 +15,17 @@ const Projects = () => {
   const gLive = "https://terrelrjones.github.io/google-home-page-clone/";
   const eBankCode = "https://github.com/TerrelRJones/easy-bank";
   const eBankLive = "https://terrelrjones.github.io/easy-bank/";
+  const autoShineLive = "https://expo.dev/@terrelrjones/autoshine-app";
+  const autoShineCode = "https://github.com/TerrelRJones/auto-shine-app";
 
   const projects = [
+    {
+      name: "AUTOSHINE APP",
+      img: autoShine,
+      live: autoShineLive,
+      code: autoShineCode,
+      route: "/autoshine",
+    },
     {
       name: "Prime",
       img: eCommerce,
