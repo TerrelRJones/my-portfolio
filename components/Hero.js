@@ -21,9 +21,7 @@ import {
 const HeroContainer = styled.main`
   /* position: relative; */
   width: 100%;
-  height: 100vh;
   /* padding-top: 5rem; */
-
   align-items: center;
   justify-content: center;
   margin-bottom: 5rem;
@@ -34,14 +32,14 @@ const LeftSide = styled.div`
   flex-direction: column;
   /* align-items: center; */
   flex: 1;
+  height: 100%;
 `;
 
 const RightSide = styled.div`
   flex: 0.5;
+  margin-top: 40px;
 
-  /* background-color: black; */
-
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 992px) {
     width: 80%;
     margin-top: 0;
     margin-bottom: 0;
@@ -66,7 +64,8 @@ const BottomContainer = styled.div`
     color: var(--main);
     font-family: "Archivo Black", sans-serif;
   }
-  @media only screen and (max-width: 1024px) {
+
+  @media (max-width: 1024px) {
     margin-top: 20px;
     flex-direction: column;
     margin-bottom: 10px;
