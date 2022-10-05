@@ -10,7 +10,7 @@ export const Container = styled.div`
 
   @media only screen and (max-width: 1024px) {
     flex-direction: column-reverse;
-    margin-top: 4rem;
+    margin-top: 40px;
     height: 80%;
   }
 `;

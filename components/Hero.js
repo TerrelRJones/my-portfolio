@@ -39,7 +39,6 @@ const RightSide = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 40px;
 
   .img {
     border-radius: 2px;
@@ -94,6 +93,10 @@ const ImageContainer = styled.div`
   padding: 20px;
   background-color: var(--yellow);
   border: 8px solid var(--main);
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 `;
 
 const Hero = () => {

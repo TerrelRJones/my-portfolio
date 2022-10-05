@@ -43,7 +43,7 @@ const SkillsRow = styled.div`
   color: var(--main);
   border: 8px solid var(--main);
   background-color: var(--yellow);
-  padding: 20px 40px;
+  padding: 10px;
   border-radius: 2px;
 
   @media only screen and (max-width: 1024px) {
@@ -51,14 +51,16 @@ const SkillsRow = styled.div`
   }
 `;
 
+const iconSize = 40;
+
 const skillsArr = [
-  { icon: <SiReact size={50} color="#000" />, skill: "React" },
-  { icon: <SiTypescript size={50} color="#000" />, skill: "TypeScript" },
-  { icon: <SiJavascript size={50} color="#000" />, skill: "JavaScript" },
-  { icon: <SiGit size={50} color="#000" />, skill: "Git" },
-  { icon: <SiHtml5 size={50} color="#000" />, skill: "HTML5" },
-  { icon: <SiCss3 size={50} color="#000" />, skill: "CSS3" },
-  { icon: <SiNodedotjs size={50} color="#000" />, skill: "NodeJS" },
+  { icon: <SiReact size={iconSize} color="#000" />, skill: "React" },
+  { icon: <SiTypescript size={iconSize} color="#000" />, skill: "TypeScript" },
+  { icon: <SiJavascript size={iconSize} color="#000" />, skill: "JavaScript" },
+  { icon: <SiGit size={iconSize} color="#000" />, skill: "Git" },
+  { icon: <SiHtml5 size={iconSize} color="#000" />, skill: "HTML5" },
+  { icon: <SiCss3 size={iconSize} color="#000" />, skill: "CSS3" },
+  { icon: <SiNodedotjs size={iconSize} color="#000" />, skill: "NodeJS" },
 ];
 
 const Skills = () => {
