@@ -6,13 +6,10 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: w; */
-  /* border-bottom: 8px solid var(--main); */
   width: 100%;
   color: black;
   height: 70px;
   margin: 0 auto;
-  /* padding: 0 10px; */
   max-width: 1440px;
   font-size: 1.2rem;
 
@@ -25,11 +22,11 @@ const StyledLink = styled.a`
   padding: 0rem 1rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
-  font-weight: 700;
+  color: #000;
+  font-weight: 900;
   transition: 0.2s ease-in-out;
 
-  :hover {
+  &:hover {
     transform: translateY(-2px);
     color: var(--yellow);
     @media (max-width: 500px) {
@@ -61,29 +58,25 @@ const StyledHamburger = styled.div`
 
 const NavBar = () => {
   return (
-    <div className="bg">
-      <Nav>
-        <div>
-          <Link href="/" passHref>
-            <StyledLink>Terrel R Jones</StyledLink>
-          </Link>
-        </div>
-        <StyledNavLink>
-          {/* <Link href="#work" passHref>
-            <StyledLink>Work</StyledLink>
-          </Link> */}
-          {/* <Link href="/about" passHref>
-            <StyledLink>About</StyledLink>
-          </Link> */}
-          {/* <Link href="/contact" passHref>
-            <StyledLink>Contact</StyledLink>
-          </Link> */}
-        </StyledNavLink>
-        {/* <StyledHamburger>
+    <Nav>
+      <div>
+        {/* <Link href="/" passHref> */}
+        <StyledLink>TRJ</StyledLink>
+        {/* </Link> */}
+      </div>
+      {/* <StyledNavLink>
+        <Link href="#work" passHref>
+          <StyledLink>Work</StyledLink>
+        </Link>
+
+        <Link href="/contact" passHref>
+          <StyledLink>Contact</StyledLink>
+        </Link>
+      </StyledNavLink> */}
+      {/* <StyledHamburger>
           <FaIcon.FaBars />
         </StyledHamburger> */}
-      </Nav>
-    </div>
+    </Nav>
   );
 };
 

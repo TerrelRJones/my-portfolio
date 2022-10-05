@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
+import { Heading } from "../styles/uielements";
 
 const FormContainer = styled.div`
   display: flex;
@@ -8,7 +9,6 @@ const FormContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   font-family: "Archivo Black", sans-serif;
-  height: 100vh;
   width: 100%;
 `;
 
@@ -62,7 +62,7 @@ const contact = () => {
   return (
     <Layout>
       <FormContainer>
-        <h1>CONTACT ME</h1>
+        <Heading>CONTACT ME</Heading>
         <Form
           onSubmit={(e) => {
             e.preventDefault();

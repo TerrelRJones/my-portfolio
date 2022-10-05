@@ -47,7 +47,7 @@ export const ParagraphText = styled.div`
   line-height: 2rem;
   /* letter-spacing: 0.1rem; */
   font-family: "Archivo Black", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   max-width: 800px;
   color: var(--main);
 
@@ -73,4 +73,16 @@ export const StyledLink = styled.a`
     font-size: 1.8rem;
     text-align: center;
   }
+`;
+
+export const ProjectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const VideoBlock = styled.div`
+  height: 40%;
+  width: 80%;
+  background-color: black;
 `;

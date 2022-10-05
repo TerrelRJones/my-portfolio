@@ -2,53 +2,9 @@ import styled from "styled-components";
 import { Heading, SubHeading } from "../styles/uielements";
 import Image from "next/image";
 import Link from "next/link";
-
-import eCommerce from "../public/img/e-commerce.png";
-import google from "../public/img/google-clone.png";
-import easyBank from "../public/img/easy-bank.png";
-import autoShine from "../public/img/autoshine2.png";
+import { projectData } from "../projectData";
 
 const Projects = () => {
-  const eCode = "https://github.com/TerrelRJones/e-commerce";
-  const eLive = "https://terrelrjones.github.io/e-commerce/";
-  const gCode = "https://github.com/TerrelRJones/google-home-page-clone";
-  const gLive = "https://terrelrjones.github.io/google-home-page-clone/";
-  const eBankCode = "https://github.com/TerrelRJones/easy-bank";
-  const eBankLive = "https://terrelrjones.github.io/easy-bank/";
-  const autoShineLive = "https://expo.dev/@terrelrjones/autoshine-app";
-  const autoShineCode = "https://github.com/TerrelRJones/auto-shine-app";
-
-  const projects = [
-    {
-      name: "AUTOSHINE APP",
-      img: autoShine,
-      live: autoShineLive,
-      code: autoShineCode,
-      route: "/autoshine",
-    },
-    {
-      name: "Prime",
-      img: eCommerce,
-      live: eLive,
-      code: eCode,
-      route: "/prime",
-    },
-    {
-      name: "Google Homepage",
-      img: google,
-      live: gLive,
-      code: gCode,
-      route: "/googleHomepageClone",
-    },
-    {
-      name: "Easy Bank",
-      img: easyBank,
-      live: eBankLive,
-      code: eBankCode,
-      route: "/easyBank",
-    },
-  ];
-
   const ProjectContainer = styled.div`
     display: flex;
     justify-content: space-between;
@@ -72,8 +28,13 @@ const Projects = () => {
   `;
 
   const ProjectImageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    cursor: pointer;
+    max-height: 300px;
+    height: 100%;
+    /* cursor: pointer; */
     padding: 10px;
     background-color: var(--yellow);
     border: 8px solid var(--main);
@@ -101,6 +62,7 @@ const Projects = () => {
 
     :hover {
       background-color: var(--yellow);
+      color: #000;
       transform: translate3d(-4px, -4px, 5px);
     }
   `;
@@ -129,18 +91,20 @@ const Projects = () => {
     <>
       <Heading id="work">Projects</Heading>
       <ProjectContainer>
-        {projects.map((item, index) => (
+        {projectData.map((item, index) => (
           <ProjectBlockContainer key={index}>
             <SubHeading>{item.name}</SubHeading>
             {/* <Link href={item.route} passHref> */}
             <ProjectImageContainer>
-              <Image src={item.img} alt="Picture of work" />
+              <Image layout="intrinsic" src={item.img} alt="Picture of work" />
             </ProjectImageContainer>
             {/* </Link> */}
             <ButtonContainer>
               <Link href={item.live} passHref>
                 <a target="_blank">
-                  <StyledButton>SITE</StyledButton>
+                  <StyledButton>
+                    {item.linkName ? item.linkName : "LIVE"}
+                  </StyledButton>
                 </a>
               </Link>
               <Link href={item.code} passHref>
