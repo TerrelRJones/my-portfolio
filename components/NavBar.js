@@ -1,16 +1,15 @@
 import styled from "styled-components";
 import Link from "next/link";
-import * as FaIcon from "react-icons/fa";
 
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  color: black;
-  height: 70px;
-  margin: 0 auto;
   max-width: 1440px;
+  margin: 0 auto;
+  color: white;
+  height: 70px;
   font-size: 1.2rem;
 
   @media (max-width: 500px) {
@@ -39,6 +38,7 @@ const StyledLink = styled.a`
 
 const StyledNavLink = styled.div`
   display: flex;
+
   @media only screen and (max-width: 1440px) {
     flex-direction: column;
     display: none;

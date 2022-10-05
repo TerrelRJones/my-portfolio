@@ -16,7 +16,7 @@ const HeroContainer = styled.main`
   width: 100%;
   height: calc(100vh);
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 5rem;
 `;
 
@@ -80,7 +80,7 @@ const BottomContainer = styled.div`
 
 const LeftIconLinks = styled.div`
   display: flex;
-  padding: 0 1rem;
+  padding: 10px;
   width: 15rem;
   justify-content: space-between;
 `;
@@ -89,7 +89,7 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 500px;
   padding: 20px;
   background-color: var(--yellow);
   border: 8px solid var(--main);
@@ -106,12 +106,11 @@ const Hero = () => {
         <LeftSide>
           <Heading>Terrel R Jones</Heading>
           <ParagraphText>
-            Full Stack JavaScript Engineer with a focus on front end technology
-            React. I have a strong interest in System Design, and Serverless
-            technologies such as AWS, and Google Cloud. Professional strengths
-            include creative thinking, and problem solving, clear verbal and
-            written communication, and time management. I&#39;m ready to learn
-            and contribute to team success.
+            Front End Developer with a focus on front end technology React. I
+            love creating pixel perfect ui, and contributing to the design
+            process. Professional strengths include creative thinking, and
+            problem solving, clear verbal and written communication, and time
+            management. I&#39;m ready to learn and contribute to team success.
           </ParagraphText>
         </LeftSide>
         <RightSide>

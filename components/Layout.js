@@ -17,11 +17,13 @@ const StyledLayout = styled.main`
 
 const Layout = ({ children }) => {
   return (
-    <LayoutContainer>
-      <NavBar />
-      <StyledLayout>{children}</StyledLayout>
-      <Footer />
-    </LayoutContainer>
+    <>
+      <LayoutContainer>
+        <NavBar />
+        <StyledLayout>{children}</StyledLayout>
+        <Footer />
+      </LayoutContainer>
+    </>
   );
 };
 

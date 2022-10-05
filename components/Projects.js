@@ -9,6 +9,7 @@ const Projects = () => {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
     width: 100%;
     margin-bottom: 200px;
 
