@@ -10,9 +10,9 @@ const LayoutContainer = styled.div`
 
 const StyledLayout = styled.main`
   margin: 0 auto;
-  padding: 0 20px;
   max-width: 1440px;
   font-family: "Roboto", sans-serif;
+  padding: 0 16px;
 `;
 
 const Layout = ({ children }) => {

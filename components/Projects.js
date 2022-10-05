@@ -24,7 +24,10 @@ const Projects = () => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15px;
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
   `;
 
   const ProjectImageContainer = styled.div`
