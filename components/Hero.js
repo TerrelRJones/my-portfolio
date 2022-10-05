@@ -10,18 +10,11 @@ import Link from "next/link";
 
 import profilePic from "../public/img/Terrel_headshot.jpeg";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faInstagram,
-  faLinkedin,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { SiTwitter, SiInstagram, SiGithub, SiLinkedin } from "react-icons/si";
 
 const HeroContainer = styled.main`
-  /* position: relative; */
   width: 100%;
-  /* padding-top: 5rem; */
+  height: calc(100vh);
   align-items: center;
   justify-content: center;
   margin-bottom: 5rem;
@@ -30,34 +23,43 @@ const HeroContainer = styled.main`
 const LeftSide = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  justify-content: center;
   flex: 1;
   height: 100%;
+  padding-right: 15px;
+
+  @media (max-width: 576px) {
+    padding: 0;
+    text-align: center;
+  }
 `;
 
 const RightSide = styled.div`
   flex: 0.5;
+  display: flex;
+  width: 100%;
+  justify-content: center;
   margin-top: 40px;
 
-  @media only screen and (max-width: 992px) {
-    width: 80%;
+  .img {
+    border-radius: 2px;
+  }
+
+  @media only screen and (max-width: 576px) {
+    width: 100%;
     margin-top: 0;
     margin-bottom: 0;
     flex: 0.5;
-    /* background-color: var(--yellow); */
   }
 `;
 
 const BottomContainer = styled.div`
-  /* position: absolute; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   bottom: 0;
   max-width: 1440px;
-  /* height: 50px; */
   width: 100%;
-  /* padding: 0 1rem; */
 
   h2 {
     font-size: 1.8rem;
@@ -84,6 +86,16 @@ const LeftIconLinks = styled.div`
   justify-content: space-between;
 `;
 
+const ImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 20px;
+  background-color: var(--yellow);
+  border: 8px solid var(--main);
+`;
+
 const Hero = () => {
   return (
     <HeroContainer>
@@ -100,39 +112,41 @@ const Hero = () => {
           </ParagraphText>
         </LeftSide>
         <RightSide>
-          <Image
-            src={profilePic}
-            alt="Picture of the Front End Engineer"
-            layout="intrinsic"
-          />
+          <ImageContainer>
+            <Image
+              className="img"
+              src={profilePic}
+              alt="Picture of Terrel Jones; Front End Engineer"
+              layout="intrinsic"
+            />
+          </ImageContainer>
         </RightSide>
       </Container>
       <BottomContainer>
         <LeftIconLinks>
           <Link href="https://instagram.com/fullstackrell" passHref>
             <StyledLink target="_blank">
-              <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+              <SiInstagram size={30} />
             </StyledLink>
           </Link>
 
           <Link href="https://linkedin.com/in/terrelrjones" passHref>
             <StyledLink target="_blank">
-              <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+              <SiLinkedin size={30} />
             </StyledLink>
           </Link>
           <Link href="https://twitter.com/fullstackrell" passHref>
             <StyledLink target="_blank">
-              <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+              <SiTwitter size={30} />
             </StyledLink>
           </Link>
 
           <Link href="https://github.com/TerrelRJones" passHref>
             <StyledLink target="_blank">
-              <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+              <SiGithub size={30} />
             </StyledLink>
           </Link>
         </LeftIconLinks>
-        <div>{/* <h2>Full Stack JavaScript Engineer</h2> */}</div>
       </BottomContainer>
     </HeroContainer>
   );

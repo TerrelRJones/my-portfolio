@@ -1,9 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import Head from "next/head";
 import "./_app.css";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
 
 export const GlobalStyle = createGlobalStyle`
 
