@@ -104,13 +104,15 @@ const Projects = () => {
             </ProjectImageContainer>
             {/* </Link> */}
             <ButtonContainer>
-              <Link href={item.live} passHref>
-                <a target="_blank">
-                  <StyledButton>
-                    {item.linkName ? item.linkName : "LIVE"}
-                  </StyledButton>
-                </a>
-              </Link>
+              {item.showLink && (
+                <Link href={item.live} passHref>
+                  <a target="_blank">
+                    <StyledButton>
+                      {item.linkName ? item.linkName : "LIVE"}
+                    </StyledButton>
+                  </a>
+                </Link>
+              )}
               <Link href={item.code} passHref>
                 <a target="_blank">
                   <StyledButtonTwo>CODE</StyledButtonTwo>

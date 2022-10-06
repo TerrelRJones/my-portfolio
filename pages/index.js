@@ -8,13 +8,11 @@ import Loading from "../components/Loading";
 
 export default function Home() {
   return (
-    <>
-      <Layout>
-        <Hero />
-        <Skills />
-        <Projects />
-        {/* <Experience /> */}
-      </Layout>
-    </>
+    <Layout>
+      <Hero />
+      <Skills />
+      <Projects />
+      {/* <Experience /> */}
+    </Layout>
   );
 }

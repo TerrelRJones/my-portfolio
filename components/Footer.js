@@ -11,7 +11,7 @@ const FooterStyled = styled.footer`
   margin-top: auto;
 
   h1 {
-    font-size: 1rem;
+    font-size: 20px;
     color: var(--main);
   }
 `;
@@ -19,7 +19,7 @@ const FooterStyled = styled.footer`
 const Footer = () => {
   return (
     <FooterStyled>
-      <h1>Copywright @2021 FSR</h1>
+      <h1>Copywright @2021 TRJ</h1>
     </FooterStyled>
   );
 };

@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>FSR</title>
+        <title>Terrel Jones | Portfolio Site</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="shortcut icon" href="/img/fsrRellLogo.ico" />
       </Head>

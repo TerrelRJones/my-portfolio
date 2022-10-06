@@ -24,7 +24,7 @@ const StyledLink = styled.a`
   color: #000;
   font-weight: 900;
   transition: 0.2s ease-in-out;
-
+  /* 
   &:hover {
     transform: translateY(-2px);
     color: var(--yellow);
@@ -33,7 +33,7 @@ const StyledLink = styled.a`
         transform: translateX(2px);
       }
     }
-  }
+  } */
 `;
 
 const StyledNavLink = styled.div`
@@ -59,11 +59,12 @@ const StyledHamburger = styled.div`
 const NavBar = () => {
   return (
     <Nav>
-      <div>
+      <div style={{ display: "flex", flexDirection: "column" }}>
         {/* <Link href="/" passHref> */}
         <StyledLink>TRJ</StyledLink>
         {/* </Link> */}
       </div>
+
       {/* <StyledNavLink>
         <Link href="#work" passHref>
           <StyledLink>Work</StyledLink>
@@ -73,9 +74,6 @@ const NavBar = () => {
           <StyledLink>Contact</StyledLink>
         </Link>
       </StyledNavLink> */}
-      {/* <StyledHamburger>
-          <FaIcon.FaBars />
-        </StyledHamburger> */}
     </Nav>
   );
 };

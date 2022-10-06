@@ -9,10 +9,11 @@ export const projectData = [
   {
     name: "AUTOSHINE",
     img: autoShineImg,
-    live: "https://expo.dev/@terrelrjones/autoshine-app",
+    live: "https://youtu.be/-xsFaDUNxFU",
     code: "https://github.com/TerrelRJones/auto-shine-app",
     route: "/auto-shine",
     linkName: "DEMO",
+    showLink: true,
   },
   {
     name: "Booking Engine",
@@ -21,6 +22,7 @@ export const projectData = [
     code: "https://github.com/TerrelRJones/booking-engine",
     route: "/booking-engine",
     linkName: "DEMO",
+    showLink: false,
   },
   {
     name: "Cryptolly",
@@ -28,6 +30,7 @@ export const projectData = [
     live: "https://crypto-website-l9xnnni1u-terrelrjones.vercel.app/",
     code: "https://github.com/TerrelRJones/crypto-website",
     route: "/cryptolly",
+    showLink: true,
   },
   {
     name: "Trivia Fighters",
@@ -35,6 +38,7 @@ export const projectData = [
     live: "https://trivia-game-kohl.vercel.app/",
     code: "https://github.com/TerrelRJones/trivia-game",
     route: "/trivia-game",
+    showLink: true,
   },
   {
     name: "Eye Care Site",
@@ -42,6 +46,7 @@ export const projectData = [
     live: "https://eye-care-site.vercel.app/",
     code: "https://github.com/TerrelRJones/eye-care-site",
     route: "/eye-care-site",
+    showLink: true,
   },
   {
     name: "Seaan Brooks",
@@ -49,5 +54,6 @@ export const projectData = [
     live: "https://www.seaanbrooks.com/",
     code: "https://github.com/TerrelRJones/seaan-brooks-website",
     route: "/seaan-brooks",
+    showLink: true,
   },
 ];
