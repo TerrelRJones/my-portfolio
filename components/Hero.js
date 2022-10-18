@@ -109,7 +109,7 @@ const Hero = () => {
             Solution-focused Frontend Developer with experience in front end
             technology React. Seeking a role where I&#39;m able to maximize my
             skills, and experience in design . Dedicated to building and
-            optimizing user-focused websites for clients with various business
+            optimizing user-focused web apps for clients with various business
             objectives. Professional strengths include creative thinking, and
             analytical problem solving, clear verbal and written communication,
             and time management. Eager to contribute to team success.
