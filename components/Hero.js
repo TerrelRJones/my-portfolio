@@ -106,12 +106,18 @@ const Hero = () => {
         <LeftSide>
           <Heading>Terrel R Jones</Heading>
           <ParagraphText>
-    Solution-focused Frontend Developer with experience in front end technology React. Seeking a role where I'm able to maximize my skills, and experience in design . Dedicated to building and optimizing user-focused websites for clients with various business objectives. Professional strengths include creative thinking, and analytical problem solving, clear verbal and written communication, and time management. Eager to contribute to team success.
-//             Front End Developer with a focus on front end technology React. I
-//             love creating pixel perfect ui, and contributing to the design
-//             process. Professional strengths include creative thinking, and
-//             problem solving, clear verbal and written communication, and time
-//             management. I&#39;m ready to learn and contribute to team success.
+            Solution-focused Frontend Developer with experience in front end
+            technology React. Seeking a role where I&#39;m able to maximize my
+            skills, and experience in design . Dedicated to building and
+            optimizing user-focused websites for clients with various business
+            objectives. Professional strengths include creative thinking, and
+            analytical problem solving, clear verbal and written communication,
+            and time management. Eager to contribute to team success.
+            {/* Front End Developer with a focus on front end technology React. I
+            love creating pixel perfect ui, and contributing to the design
+            process. Professional strengths include creative thinking, and
+            problem solving, clear verbal and written communication, and time
+            management. I&#39;m ready to learn and contribute to team success. */}
           </ParagraphText>
         </LeftSide>
         <RightSide>
